@@ -1,0 +1,104 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;	
+	margin: 0;
+	background-color: #1fb8e0;
+	color: white;
+	text-align: center;
+	text-shadow: 3px 0px 1px black;
+}
+
+
+p,ul {
+	width: 70%;
+	margin: 0 auto;
+	text-shadow: none;
+	text-align: left;
+}
+
+.layout {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.head {
+	width: 300px;
+	height: 300px;
+	background-color: #b37a4c;
+	margin: 0 auto;
+	border-radius: 25% 25% 50% 50%;
+	position: relative;
+	top: 50px;
+}
+
+.hair {
+	width: 150px;
+	height: 50px;
+	border-radius: 0% 0% 25% 25%;
+	background-color: black;
+	margin: 0 auto;
+}
+.eyeline {
+	display: flex;
+	height: 200px;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+.eyeball {
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 60% 10% 60% 10%;
+	transform: rotate(45deg);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.eyeline.start-between {
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.eyeline.center-around {
+	align-items: center;
+	justify-content: space-around;
+}
+
+.eyeline.end-between {
+	align-items: flex-end;
+	justify-content: center;
+}
+.pupil {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.white {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: white;
+
+	position: relative;
+	top: 30px;
+	left: -5px;
+}
+
+.mouth {
+	height: 10px;
+	width: 90px;
+	margin: 0 auto;
+	border-radius: 30%;
+	background-color: black;
+}
+.torso {
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+	background-color: darkred;
+	border-radius: 40% 40% 20% 20%;
+}
