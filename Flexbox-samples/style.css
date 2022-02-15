@@ -33,7 +33,7 @@ u {
 }
 
 article {
-	margin: 5%;
+	margin: 5% 10%;
 }
 .head {
 	width: 15rem;
@@ -80,9 +80,24 @@ article {
 	justify-content: space-around;
 }
 
-.eyeline.end-between {
+.eyeline.end-center {
 	align-items: flex-end;
 	justify-content: center;
+}
+
+.eyeline.start-center {
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.eyeline.end-between {
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.eyeline.end-evenly {
+	align-items: flex-end;
+	justify-content: space-evenly;
 }
 .pupil {
 	width: 3.3rem;
@@ -114,4 +129,26 @@ article {
 	margin: 0 auto;
 	background-color: darkred;
 	border-radius: 40% 40% 20% 20%;
+}
+
+.shut {
+	position: absolute;
+	width: 5em;
+	height: 5em;
+	border-radius: 60% 10% 60% 10%;
+	overflow: hidden;
+}
+
+.shut > span {
+	display: block;
+	background-color: #b37a4c;
+	width: 10%;
+	height: 10%;
+	border-radius: 0 0 100%;
+	transition: 0.4s all;
+}
+
+.shut:hover >span{
+	height: 120%;
+	width: 120%;
 }
